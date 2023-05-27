@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
    <header>
         <h1>Meu Menu</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opçaõ 1</a></li>
                 <li><a href="#">Opçaõ 2</a></li>
@@ -33,5 +36,21 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officia officiis quae fugit, consectetur ratione dolorem quas similique delectus natus maiores sequi nam eaque et ex? Quod fugit vitae modi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto in, possimus magnam assumenda sunt illo sint nulla facere atque unde ad ullam! Eos, quia minima asperiores cum voluptatem unde tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero harum illum, rem minima voluptates nesciunt consequatur eos facilis quo ex. Minima animi odio, doloremque provident aspernatur nobis deleniti ab aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus expedita quasi qui tenetur perspiciatis. Earum ex quis dignissimos? Autem, laborum impedit! Deleniti, cumque autem illum incidunt placeat veniam id ea!</p>
         </article>
    </main>
+   <script>
+     function mudouTamanho(){
+       if(window.innerWidth >= 768){
+        itens.style.display ='block'
+       } else{
+        itens.style.display ='none'
+       } 
+    }
+    function clickMenu(){
+       if(itens.style.display=='block'){
+        itens.style.display='none'
+       } else{
+        itens.style.display='block'
+       }       
+    }
+   </script>
 </body>
 </html>

@@ -16,7 +16,7 @@ header > h1{
     text-align: center;
 }
 
-i#burguer{
+#burguer{
     background-color: rgb(48, 48, 48);
     color: white;
     display: block;
@@ -24,13 +24,14 @@ i#burguer{
     padding: 10px;
     cursor: pointer; /*Mãozinha*/
 }
-i#burguer:hover{
+#burguer:hover{
     background-color: white;
     color: black;
 
 }
 menu{
     display: none;
+    
 }
 menu > ul{
     list-style-type:none;
